@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("todosachin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6db3b7518a662fd00f4b299d500f25100411ce64")]
 [assembly: System.Reflection.AssemblyProductAttribute("todosachin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("todosachin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

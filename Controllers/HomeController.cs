@@ -29,7 +29,16 @@ namespace todosachin.Controllers
             ViewBag.Task1 = "Start Projest";
             ViewBag.Description1 = "Start TODO in web Dev";
             ViewBag.Status1= "InProgress";
-            return View();
+
+            //through ViewModel
+            var taskList = new List<TaskList>
+            {
+                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
+                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
+                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" }
+            };
+
+            return View(taskList);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

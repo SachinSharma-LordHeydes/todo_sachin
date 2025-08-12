@@ -22,23 +22,24 @@ namespace todosachin.Controllers
         //[HttpPost]
         public IActionResult Privacy()
         {
-            ViewData["Title"] = "Learn Dot net.";
-            ViewData["Description"] = "Getting statarted with dotnet.";
-            ViewData["Status"] = "Done";
+            //ViewData["Title"] = "Learn Dot net.";
+            //ViewData["Description"] = "Getting statarted with dotnet.";
+            //ViewData["Status"] = "Done";
 
-            ViewBag.Task1 = "Start Projest";
-            ViewBag.Description1 = "Start TODO in web Dev";
-            ViewBag.Status1= "InProgress";
+            //ViewBag.Task1 = "Start Projest";
+            //ViewBag.Description1 = "Start TODO in web Dev";
+            //ViewBag.Status1= "InProgress";
 
-            //through ViewModel
-            var taskList = new List<TaskList>
-            {
-                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
-                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
-                new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" }
-            };
+            ////through ViewModel
+            //var taskList = new List<TaskList>
+            //{
+            //    new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
+            //    new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" },
+            //    new TaskList { task = "Learn Dot net", Description = "Getting started with dotnet", Status = "Done" }
+            //};
 
-            return View(taskList);
+            //return View(taskList);
+            return View(new TaskList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

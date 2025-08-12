@@ -2,10 +2,12 @@
     ViewData["Title"] = "Privacy Policy";
 }
 
-@model List<todosachin.Models.TaskList>
+@* @model List<todosachin.Models.TaskList> *@
+@model todosachin.Models.TaskList
 
+
+@* 
 <h1>@ViewData["Title"]</h1>
-
 <p>Use this page to detail your site's privacy policy.</p>
 
 <h1>Data from view</h1>
@@ -46,4 +48,18 @@
 </table>
 
 
+ *@
 
+ <h1>Implementaing tag Helpers</h1>
+
+ <form asp-controller="Home" asp-action="Privacy" method="POST">
+    @* <label asp-for="Task"></label>
+    <input asp-for="Task" />
+    <label asp-for="Description"></label>
+    <input asp-for="Description" />
+    <label asp-for="Status"></label>
+    <input asp-for="Status" /> *@
+    @Html.EditorForModel()
+
+    <button type="submit">Add Task</button>
+ </form>

@@ -5,6 +5,7 @@ namespace todosachin.Models
     public class TaskList
     {
 
+        public int Id { get; set; }
         [Required]
         [Display(Name = "Task")]
         public string Task { get; set; }
